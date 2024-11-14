@@ -1,0 +1,115 @@
+body {
+    background-image: url('../../add.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(0, 123, 255, 0.1);
+    border: 1px solid rgba(0, 123, 255, 0.3);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: background 0.3s, border 0.3s;
+    position: relative;
+}
+
+li:hover {
+    background: rgba(0, 123, 255, 0.3);
+    border: 1px solid rgba(0, 123, 255, 0.6);
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.users-table--edit,
+.users-table--delete {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 0.6em;
+    opacity: 0.8;
+}
+
+.users-table--edit {
+    background-color: rgba(46, 204, 113, 0.7);
+}
+
+.users-table--edit:hover {
+    background-color: rgba(46, 204, 113, 1);
+}
+
+.users-table--delete {
+    background-color: rgba(231, 76, 60, 0.7);
+    margin-left: 5px;
+}
+
+.users-table--delete:hover {
+    background-color: rgba(231, 76, 60, 1);
+}
+
+.users-table--edit i,
+.users-table--delete i {
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+.create-product-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: rgba(46, 204, 113, 0.7);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.create-product-button:hover {
+    background-color: rgba(46, 204, 113, 1);
+    transform: translateY(-2px);
+}
+
+/* Nuevo estilo para el nombre del usuario */
+.user-name {
+    color: #007bff; /* Color azul */
+    cursor: pointer; /* Cambiar el cursor */
+    transition: color 0.3s; /* Transición suave */
+}
+
+.user-name:hover {
+    text-decoration: underline; /* Subrayar al pasar el cursor */
+}

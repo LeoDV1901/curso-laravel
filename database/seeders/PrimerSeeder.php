@@ -14,9 +14,15 @@ class PrimerSeeder extends Seeder
     DB::transaction(function () {
         DB::table('productos')->insert([
             [
-                'nombre' => 'Producto 1',
+                'nombre' => 'Dato de seeder 1',
                 'precio' => 180.00,
-                'descripcion' => 'Carro',
+                'descripcion' => 'Pruba de dato de seeder',
+                
+            ],
+            [
+                'nombre' => 'Dato de seeder 2',
+                'precio' => 250.00,
+                'descripcion' => 'Pruba de dato de seeder 2',
                 
             ],
             

@@ -1,0 +1,79 @@
+/* public/css/crud.css */
+
+/* Aplica un fondo con imagen y un color de fondo con opacidad al body */
+body {
+    background-image: url('../../crud.jpg'); /* Asegúrate de que esta ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el contenedor de productos */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con más transparencia */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el título */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la lista de productos */
+ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+/* Estilos para cada producto */
+li {
+    background: rgba(0, 123, 255, 0.1); /* Fondo azul claro con opacidad */
+    border: 1px solid rgba(0, 123, 255, 0.3); /* Borde azul claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espaciado entre productos */
+    transition: background 0.3s, border 0.3s; /* Transición suave */
+}
+
+/* Cambia el color de fondo y borde al pasar el puntero */
+li:hover {
+    background: rgba(0, 123, 255, 0.3); /* Cambia a un azul más oscuro */
+    border: 1px solid rgba(0, 123, 255, 0.6); /* Borde más oscuro */
+}
+
+/* Estilos para los enlaces de editar y eliminar */
+.users-table--edit,
+.users-table--delete {
+    display: inline-block;
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em; /* Tamaño de fuente ajustado */
+}
+
+.users-table--edit {
+    background-color: #2ecc71; /* Verde para editar */
+}
+
+.users-table--edit:hover {
+    background-color: #27ae60; /* Verde más oscuro al pasar el puntero */
+}
+
+.users-table--delete {
+    background-color: #e74c3c; /* Rojo para eliminar */
+    margin-left: 5px; /* Margen a la izquierda */
+}
+
+.users-table--delete:hover {
+    background-color: #c0392b; /* Rojo más oscuro al pasar el puntero */
+}

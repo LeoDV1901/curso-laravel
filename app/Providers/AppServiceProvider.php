@@ -1,24 +1,17 @@
 <?php
 
-namespace App\Providers;
+namespace App\Http\Controllers;
 
-use Illuminate\Support\ServiceProvider;
+use App\Services\MyService;
 
-class AppServiceProvider extends ServiceProvider
+class MyController extends Controller
 {
-    /**
-     * Register any application services.
-     */
-    public function register(): void
+    protected $myService;
+
+    public function __construct(MyService $myService)
     {
-        //
+        $this->myService = $myService;
     }
 
-    /**
-     * Bootstrap any application services.
-     */
-    public function boot(): void
-    {
-        //
-    }
+    // Otros métodos de la clase
 }
